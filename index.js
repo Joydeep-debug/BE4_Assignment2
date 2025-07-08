@@ -44,7 +44,7 @@ app.get("/recipes", async (req, res) => {
             res.status(404).json({error: "Recipes not found."});
         }
     } catch(error){
-        res.status(500).json({error: "Failed to fetch books."});
+        res.status(500).json({error: "Failed to fetch recipes."});
     }
 });
 
